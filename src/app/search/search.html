@@ -1,0 +1,318 @@
+<app-navbar></app-navbar>
+
+
+
+    <div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+      <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+
+        <main class="flex flex-col lg:flex-row gap-8 p-4 md:p-6 lg:p-8">
+          <aside class="w-full lg:w-1/4">
+            <div class="flex flex-col gap-6">
+              <h3 class="text-lg font-bold">Filter By</h3>
+              <div class="flex flex-col gap-4">
+                <h4 class="font-semibold">Occasion</h4>
+                <div class="flex flex-col gap-2 text-sm">
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Birthday</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Anniversary</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Congratulations</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Sympathy</label
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h4 class="font-semibold">Flower Type</h4>
+                <div class="flex flex-col gap-2 text-sm">
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Roses</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Lilies</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Tulips</label
+                  >
+                  <label class="flex items-center gap-2"
+                    ><input
+                      class="form-checkbox rounded text-primary focus:ring-primary/50"
+                      type="checkbox"
+                    />
+                    Orchids</label
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h4 class="font-semibold">Price Range</h4>
+                <input
+                  class="w-full h-2 bg-primary/20 rounded-lg appearance-none cursor-pointer dark:bg-primary/30"
+                  style="--thumb-color: #e8308c"
+                  type="range"
+                />
+                <div class="flex justify-between text-sm">
+                  <span>$50</span>
+                  <span>$200</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-6">
+              <label class="w-full sm:w-auto">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-12">
+                  <div
+                    class="text-primary flex border-none bg-primary/20 dark:bg-primary/30 items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  >
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-base focus:outline-0 focus:ring-0 border-none bg-primary/20 dark:bg-primary/30 h-full placeholder:text-primary/80 dark:placeholder:text-primary/70 px-4"
+                    placeholder="Search for flowers or arrangements..."
+                    value=""
+                  />
+                </div>
+              </label>
+              <div class="relative mt-4 sm:mt-0">
+                <select
+                  class="appearance-none w-full sm:w-48 bg-primary/20 dark:bg-primary/30 border-none rounded-lg py-2 pl-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                >
+                  <option>Sort by: Featured</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest Arrivals</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-primary"
+                >
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6">
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="A luxurious bouquet of pink and white flowers in a Parisian style."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBjy-LO-8jrgDHi6Ir2O1dkDI-m9run6EDkXk0Ew76s5nYZ5yrwKYpMwqiTiYYIY9bhhJBNQjBgsDjzDsJJDUVRVMpDptO_FWG_sOMyt6o0S0VL0j1ItjsPGirnTY-ZxgzIPyZPtUDxraetf-vgyjCPCT4kH1JRe2IQph0zcm72MX7h8xlWIiSiotguytJSnQh522OKK-OemDOt__pDSuA8D5kb-Pt2yFGrp38cXHehqrV3Q0OFXsAVUy9SboL3wt6sTq8t8dFvl6h');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">The Parisian Dream</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $75.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="A vibrant bouquet with orange and yellow flowers resembling a sunset."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAk8X4QaUcucOjWIkWNPmki2GP9OA1HQBwhUHbsEET5HyCNHNq8Liu05As50d8ACQWaj1ASkOSqjh63ZtOG1VKDVGAhl23o9h52PkUKRfdPpo4KZKV_3zyd4FNsYIuEXl62jYL7hM69q3DNDE-Xl6ExTbfkntoGGPodndZJoCYMPSsxROJMRwfZ-mj8QPpyYlAySOlIboQk19sVvFtUl6qOCjC7kJ1k17mnFz2HEWgLxH09n3O504S6Y_nBAP0clDusTh9U6E9aiLu-');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">Sunset Bouquet</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $85.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="A romantic bouquet of deep red roses."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCec2EQo_NsLJ0_EntIfhkaaP5ge1FgmjdjUi_NOxs8Ir88WXktfgq2B5AK7NIaCOxU8z3C7D1aBf2zPM4crRzBYYWqp7iH_iZw5jlCZSvVnP_sI0DSIUzOhAHc0xNJp6s1ynJK8TMUqX1akTdY9KiGgiec8KKGKNmHfWzwZnz-89eHoYJOH1SDiLvnOv3eLE3A1v6mqcbUVcLvfOOtOATxWtiPuRduFl_2ALbwZMNZZL-te_LN5oGzaSIDtzpHaBJld03LyXXehDyO');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">Crimson Kiss</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $95.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="A gentle bouquet of lavender and other purple flowers."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAN3lqhI61_Veraem29pjC9SELaYfgpeKyHi2L_3fMbrFmb31uAHQaNo6hxZZrmIIheGz85Hw9E1SDsUck4N81xcog9f-Tt09gdq9GewZVicwSxp3HaEC77Wne6K11PgxGo53Goq-TUqQ5Cs60TNiH_LzAeX_N7CTQJhoHiEMp0FN_5ppd7PLZEpj0r6_cVvoyXXw96fP3Rh3H9y8yInjvXR0PXz3HbWYxqtlYVOJSWH2a3sIX755G0dEy1xpoLDQxPUtDZF1as3t_d');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">Lavender Meadow</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $65.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="An elegant bouquet with blushing pink and white flowers for a wedding."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwoylPmNX0D7sbO8VhzT0JHQFQwgnU6REC0so-ok4Sq-RVxz_CLiu8vivE-OoIJb6GB78sjddVrpntP3EF_kx9jnXXCFkT6weijCaatN_1prcHky8aTpCzYvOCCSFKPFxXAfPdL4iDDeFUTuw8ltaidiG4kMHO_7FK0WScKKzwnMWE2iHxyWtH9GZSWyJw6o1kZeoBs6GT7P1oHM1BYmmja6is9YsZcqBpbU2cWBEIUqsSAi1AqTWbM3sj27aQ2SqjgjIFGYupXQL8');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">Blushing Bride</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $110.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 group">
+                <div
+                  class="relative w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-xl"
+                  data-alt="A magical bouquet with a mix of colorful wildflowers."
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC71kksdIZDXGzPVP3kspYwy9L1R8JqviNBngeYaF7kHI9zMqZFFuLUtNP9zOg4RdlwK9TYzeeP6DLvdUYYo9wTxS5LuD0Tb4p1v9l8yji6pP2LvM3oUwA7pnHFsp5tV4Y98zrTBcqcsGx-GlyACsxno34SB6n3E9mI40aVxp8gjNR4-0JIKKa0urg25CufooQM0r4wexJtEStJ8I1n-tyVz3BtWWJM9UK3HSzWOeMU4jcDFAW5lzsjGnLTDgFXLusHDZPHjOnf-YMn');
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                  <button
+                    class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 h-10 px-4 bg-primary text-white rounded-lg text-sm font-bold"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-normal">Enchanted Garden</p>
+                  <p
+                    class="text-sm font-normal leading-normal text-primary/80 dark:text-primary/70"
+                  >
+                    $150.00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-4 mt-8">
+              <a class="flex size-10 items-center justify-center" href="#">
+                <span class="material-symbols-outlined text-lg">chevron_left</span>
+              </a>
+              <a
+                class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white dark:text-background-dark rounded-full bg-primary"
+                href="#"
+                >1</a
+              >
+              <a
+                class="text-sm font-normal leading-normal flex size-10 items-center justify-center rounded-full hover:bg-primary/20 dark:hover:bg-primary/30"
+                href="#"
+                >2</a
+              >
+              <a
+                class="text-sm font-normal leading-normal flex size-10 items-center justify-center rounded-full hover:bg-primary/20 dark:hover:bg-primary/30"
+                href="#"
+                >3</a
+              >
+              <span
+                class="text-sm font-normal leading-normal flex size-10 items-center justify-center rounded-full"
+                >...</span
+              >
+              <a
+                class="text-sm font-normal leading-normal flex size-10 items-center justify-center rounded-full hover:bg-primary/20 dark:hover:bg-primary/30"
+                href="#"
+                >10</a
+              >
+              <a class="flex size-10 items-center justify-center" href="#">
+                <span class="material-symbols-outlined text-lg">chevron_right</span>
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+

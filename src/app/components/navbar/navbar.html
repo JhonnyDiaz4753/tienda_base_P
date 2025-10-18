@@ -1,0 +1,84 @@
+<header
+  class="flex items-center justify-between border-b border-solid border-gray-200 dark:border-gray-700 px-6 py-3 bg-white dark:bg-gray-900 z-40 relative"
+>
+  <!-- Logo -->
+  <div class="flex items-center gap-3">
+    <div class="w-8 h-8 text-primary">
+      <svg
+        fill="none"
+        viewBox="0 0 48 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <span class="text-lg font-semibold text-text-light dark:text-text-dark"
+      >Florify</span
+    >
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <button
+    class="lg:hidden flex items-center justify-center h-10 w-10 text-text-light dark:text-text-dark"
+    (click)="isMenuOpen = !isMenuOpen"
+  >
+    <span class="material-symbols-outlined text-3xl">
+      {{ isMenuOpen ? 'close' : 'menu' }}
+    </span>
+  </button>
+
+  <!-- Navegación -->
+  <nav
+    class="flex-col lg:flex-row lg:flex items-center gap-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white dark:bg-gray-900 lg:bg-transparent shadow-md lg:shadow-none px-6 py-4 lg:p-0 transition-all duration-300 ease-in-out z-50"
+    [class.hidden]="!isMenuOpen"
+    [class.flex]="isMenuOpen || screenLarge"
+  >
+    <a class="text-sm font-medium hover:text-primary" href="/buscar">Catalogo</a>
+    <a class="text-sm font-medium hover:text-primary" href="#">Hombres</a>
+    <a class="text-sm font-medium hover:text-primary" href="#">Mujeres</a>
+    <a class="text-sm font-medium hover:text-primary" href="#">Niños</a>
+
+    <!-- 🔍 Barra de búsqueda (solo móvil) -->
+    <div class="flex lg:hidden mt-4 w-full">
+      <div
+        class="flex items-center w-full rounded-lg bg-[#f3e7ed] dark:bg-gray-800 text-[#974e73] dark:text-gray-400 shadow-sm focus-within:ring-2 focus-within:ring-[#c2769a] transition"
+      >
+        <span class="material-symbols-outlined pl-3 pr-2 text-xl" translate="no">search</span>
+        <input
+          type="text"
+          placeholder="Buscar productos..."
+          class="w-full bg-transparent text-[#1b0e14] dark:text-gray-200 placeholder-[#974e73] dark:placeholder-gray-400 focus:outline-none py-2 pr-3 text-base"
+        />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Botones de acción (solo escritorio) -->
+  <div class="hidden lg:flex items-center gap-4">
+    <!-- 🔍 Barra de búsqueda -->
+    <div
+      class="flex items-center w-full max-w-md rounded-lg bg-[#f3e7ed] dark:bg-gray-800 text-[#974e73] dark:text-gray-400 shadow-sm focus-within:ring-2 focus-within:ring-[#c2769a] transition"
+    >
+      <span class="material-symbols-outlined pl-3 pr-2 text-xl" translate="no">search</span>
+      <input
+        type="text"
+        placeholder="Buscar productos..."
+        class="w-full bg-transparent text-[#1b0e14] dark:text-gray-200 placeholder-[#974e73] dark:placeholder-gray-400 focus:outline-none py-2 pr-3 text-base"
+      />
+    </div>
+
+    <!-- 🛒 Carrito -->
+    <button
+      class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-700 relative"
+    >
+      <span class="material-symbols-outlined" translate="no">shopping_cart</span>
+      <span
+        class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-xs font-bold text-text-light"
+        >3</span
+      >
+    </button>
+  </div>
+</header>
