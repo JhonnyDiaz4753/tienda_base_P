@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Navbar } from '../components/navbar/navbar';
 
 @Component({
-  selector: 'app-shop',
+  selector: 'app-login',
   imports: [Navbar],
-  templateUrl: './shop.html',
-  styleUrl: './shop.css'
+  templateUrl: './login.html',
+  styleUrl: './login.css'
 })
-export class Shop {
+export class Login {
 
 }

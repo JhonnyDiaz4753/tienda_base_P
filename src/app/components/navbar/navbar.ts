@@ -10,12 +10,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-   isMenuOpen = false;
+  isMenuOpen = false;
   screenLarge = false;
+
   onResize() {
-    this.screenLarge = window.innerWidth >= 1024;
-    if (this.screenLarge) {
-      this.isMenuOpen = false;
+    if (typeof window !== 'undefined') {
+      this.screenLarge = window.innerWidth >= 1024;
+      if (this.screenLarge) {
+        this.isMenuOpen = false;
+      }
     }
   }
 
@@ -23,3 +26,4 @@ export class Navbar {
     this.onResize();
   }
 }
+
