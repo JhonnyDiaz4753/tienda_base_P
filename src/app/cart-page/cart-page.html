@@ -1,1 +1,167 @@
-<p>cart-page works!</p>
+<app-navbar></app-navbar>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+  <div class="layout-container flex h-full grow flex-col">
+    <main class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-10">
+      <div class="layout-content-container flex flex-col w-full max-w-6xl">
+        <div class="flex flex-wrap gap-2 p-4">
+          <a
+            class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+            href="#"
+            >Home</a
+          >
+          <span class="text-sm font-medium leading-normal">/</span>
+          <span class="text-sm font-medium leading-normal text-[#333333] dark:text-[#FDFBF7]"
+            >Shopping Cart</span
+          >
+        </div>
+        <div class="flex flex-wrap justify-between items-center gap-4 p-4">
+          <h1 class="text-4xl font-bold leading-tight tracking-tighter">My Cart</h1>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-8">
+          <div class="lg:col-span-2">
+            <div class="flex flex-col gap-px">
+              <div
+                class="flex items-center justify-between gap-4 bg-background-light dark:bg-background-dark px-4 py-6 border-y border-[#F5E3E3] dark:border-[#333333]"
+              >
+                <div class="flex items-center gap-6">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-24 w-24"
+                    data-alt="Enchanted Rose Medley"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-UOAyDqBAmYzu29lJequ1peM4kNY1Gw9HIWNADNDOQbj2tBzuE5SKVHSlVcy1Sw8uOKfPZkWuucoOSE3BYQBVNrSWgSMNSUbTb0uoHE0-dI-PaOiF_SNAWNC6q54L9TGlxdhjNk-ydckQTuDbQ9nLYDHyZ3PVgja-q7zr_gCOwJWsRUvWzyFGXtHqqM9fhqUMFfcggnXDK5anpCPvqSYU1lbHO14huqY_VdCsNzzzqLp9slaNPcgkh5JpZLVvxxkzg06PtSfzY3Hz');
+                    "
+                  ></div>
+                  <div class="flex flex-col justify-center gap-1">
+                    <p class="text-lg font-semibold leading-normal">Enchanted Rose Medley</p>
+                    <p
+                      class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400"
+                    >
+                      $75.00
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-6">
+                  <div class="flex items-center gap-4 text-[#333333] dark:text-[#FDFBF7]">
+                    <button
+                      class="text-lg font-medium flex h-8 w-8 items-center justify-center rounded-full border border-[#F5E3E3] dark:border-[#333333] hover:bg-[#F5E3E3] dark:hover:bg-[#333333] cursor-pointer transition-colors"
+                    >
+                      -
+                    </button>
+                    <span class="text-base font-medium leading-normal w-4 text-center">1</span>
+                    <button
+                      class="text-lg font-medium flex h-8 w-8 items-center justify-center rounded-full border border-[#F5E3E3] dark:border-[#333333] hover:bg-[#F5E3E3] dark:hover:bg-[#333333] cursor-pointer transition-colors"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <button
+                    class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                  >
+                    <span class="material-symbols-outlined">close</span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-between gap-4 bg-background-light dark:bg-background-dark px-4 py-6 border-b border-[#F5E3E3] dark:border-[#333333]"
+              >
+                <div class="flex items-center gap-6">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-24 w-24"
+                    data-alt="Sunny Day Delight"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7HdRqK0DgTm6petrlmUbkUzwYwE0I3woKty_dCEmQ6Qsl6pss_mj_Mlmo00F9Wtm7VOFlsS9WUBhRSn7Vei-9XJjwaMpFzZCz7xnfCZJIg3jNR1CRrwzYGr2u5caW1_5MYdPW8H0gKFRVBgCXJQTpnB54Mc8Y8m0dSL-Hcd3tv9G4Mp9nf-6tSQx3-mLedvgm0Fntks5lRhjfO2wBx5SSiqo5j9OC5QfzYk-7xWAOvBdqAgBWikuGXn_ebgfd1nj1bSDopF8WZOA0');
+                    "
+                  ></div>
+                  <div class="flex flex-col justify-center gap-1">
+                    <p class="text-lg font-semibold leading-normal">Sunny Day Delight</p>
+                    <p
+                      class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400"
+                    >
+                      $65.00
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-6">
+                  <div class="flex items-center gap-4 text-[#333333] dark:text-[#FDFBF7]">
+                    <button
+                      class="text-lg font-medium flex h-8 w-8 items-center justify-center rounded-full border border-[#F5E3E3] dark:border-[#333333] hover:bg-[#F5E3E3] dark:hover:bg-[#333333] cursor-pointer transition-colors"
+                    >
+                      -
+                    </button>
+                    <span class="text-base font-medium leading-normal w-4 text-center">1</span>
+                    <button
+                      class="text-lg font-medium flex h-8 w-8 items-center justify-center rounded-full border border-[#F5E3E3] dark:border-[#333333] hover:bg-[#F5E3E3] dark:hover:bg-[#333333] cursor-pointer transition-colors"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <button
+                    class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                  >
+                    <span class="material-symbols-outlined">close</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-1">
+            <div class="bg-[#F5E3E3]/30 dark:bg-[#333333]/30 p-8 rounded-xl">
+              <h2 class="text-2xl font-bold mb-6">Order Summary</h2>
+              <div class="flex flex-col gap-4">
+                <div class="flex justify-between items-center">
+                  <p class="text-base text-gray-600 dark:text-gray-300">Subtotal</p>
+                  <p class="text-base font-semibold">$140.00</p>
+                </div>
+                <div class="border-t border-[#F5E3E3] dark:border-[#333333] my-2"></div>
+                <div class="flex justify-between items-center text-lg font-bold">
+                  <p>Total</p>
+                  <p>$140.00</p>
+                </div>
+                <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
+                  Shipping and taxes are calculated at the next step.
+                </p>
+              </div>
+              <div class="mt-8">
+                <button
+                  class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-primary/90 transition-colors text-lg"
+                >
+                  Proceed to Checkout
+                </button>
+              </div>
+              <div class="mt-6">
+                <label
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  for="promo-code"
+                  >Promotional Code</label
+                >
+                <div class="flex items-center">
+                  <input
+                    class="form-input flex-grow rounded-l-lg border-[#F5E3E3] dark:border-[#333333] bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary"
+                    id="promo-code"
+                    name="promo-code"
+                    placeholder="Enter code"
+                    type="text"
+                  />
+                  <button
+                    class="bg-[#C9B07A] text-white px-4 py-2 rounded-r-lg font-semibold hover:bg-[#C9B07A]/90 transition-colors"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Empty Cart State -->
+        <!-- 
+          <div class="text-center py-20">
+            <h2 class="text-2xl font-semibold mb-4">Your cart is currently empty.</h2>
+            <button class="bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/90 transition-colors">
+              Continue Shopping
+            </button>
+          </div>
+          -->
+      </div>
+    </main>
+  </div><app-footer></app-footer>
+</div>

@@ -2,7 +2,8 @@
   class="flex items-center justify-between border-b border-solid border-gray-200 dark:border-gray-700 px-6 py-3 bg-white dark:bg-gray-900 z-40 relative"
 >
   <!-- Logo -->
-  <div class="flex items-center gap-3">
+   <a href="/">
+  <div class="flex items-center gap-3" >
     <div class="w-8 h-8 text-primary">
       <svg
         fill="none"
@@ -18,7 +19,7 @@
     <span class="text-lg font-semibold text-text-light dark:text-text-dark"
       >Florify</span
     >
-  </div>
+  </div></a>
    
   <!-- Botón hamburguesa -->
   <button
@@ -37,12 +38,12 @@
     [class.hidden]="!isMenuOpen"
     [class.flex]="isMenuOpen || screenLarge"
   >
-    <a class="text-sm font-medium hover:text-primary" href="/buscar">Catalogo</a>
+    <a class="text-sm font-medium hover:text-primary" href="/">Inicio</a>
     <a class="text-sm font-medium hover:text-primary" href="#">Hombres</a>
     <a class="text-sm font-medium hover:text-primary" href="#">Mujeres</a>
     <a class="text-sm font-medium hover:text-primary" href="#">Niños</a>
 
-    <!-- 🔍 Barra de búsqueda (solo móvil) -->
+    <!-- Barra de búsqueda (solo móvil) -->
     <div class="flex lg:hidden mt-4 w-full">
       <div
         class="flex items-center w-full rounded-lg bg-[#f3e7ed] dark:bg-gray-800 text-[#974e73] dark:text-gray-400 shadow-sm focus-within:ring-2 focus-within:ring-[#c2769a] transition"
@@ -61,7 +62,7 @@
 
   <!-- Botones de acción (solo escritorio) -->
   <div class="hidden lg:flex items-center gap-4">
-    <!-- 🔍 Barra de búsqueda -->
+    <!--  Barra de búsqueda -->
     <div
       class="flex items-center w-full max-w-md rounded-lg bg-[#f3e7ed] dark:bg-gray-800 text-[#974e73] dark:text-gray-400 shadow-sm focus-within:ring-2 focus-within:ring-[#c2769a] transition"
     >
@@ -73,8 +74,8 @@
       />
     </div>
 
-    <!-- 🛒 Carrito -->
-    <button
+    <!--  Carrito -->
+    <a href="/MiCarrito"
       class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-700 relative"
     >
       <span class="material-symbols-outlined" translate="no">shopping_cart</span>
@@ -82,9 +83,9 @@
         class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-xs font-bold text-text-light"
         >3</span
       >
-    </button>
+  </a>
 
-    <!-- 👤 Usuario -->
-     <button class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBc_lEg4jnaYdZdeewmETEr3AtvQ03zie38HfR4aBfmvHfFzP4IjaRsT2gz3oa2lliclfhVDXqh2BHwvPMfSF8w9iidptzVcdP8W71F2TD0KpcEXQboxTW5Io6SFmPugebJfyKrhiWeDsxWc7bkZKtVyOISKvM2DhmnhFesD8EwC8Tz_LJG6rk_vSGP6KYpH2uezH-_SJKGMZlBtiSh3Hsq-uRxH_40YH8DN9F7kGDypcv9Q7wyMYrsE7T-cO4ID1cc2sWJeEI0Iv0");'></button>
+    <!--  Usuario -->
+     <a href="/login" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBc_lEg4jnaYdZdeewmETEr3AtvQ03zie38HfR4aBfmvHfFzP4IjaRsT2gz3oa2lliclfhVDXqh2BHwvPMfSF8w9iidptzVcdP8W71F2TD0KpcEXQboxTW5Io6SFmPugebJfyKrhiWeDsxWc7bkZKtVyOISKvM2DhmnhFesD8EwC8Tz_LJG6rk_vSGP6KYpH2uezH-_SJKGMZlBtiSh3Hsq-uRxH_40YH8DN9F7kGDypcv9Q7wyMYrsE7T-cO4ID1cc2sWJeEI0Iv0");'></a>
   </div>
 </header>
